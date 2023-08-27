@@ -15,7 +15,7 @@ const Trade = () => {
                     / DYOR
                     <br />
                 </p>
-                <a href="#!" className="active-btn">trade</a>
+                <a href="https://leetswap.finance/" className="active-btn">trade</a>
             </div>
         </section>
     );
