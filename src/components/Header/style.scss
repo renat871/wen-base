@@ -1,0 +1,45 @@
+.header {
+    // .header__inner
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: self-start;
+
+        padding: 37px 0;
+    }
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    // .logo__img
+    &__img {
+        height: auto;
+    }
+    // .logo__text
+    &__text {
+        font-size: 22px;
+        font-weight: 400;
+    }
+}
+.wallet {
+    font-size: 22px;
+    font-weight: 400;
+    // .wallet__text
+    &__text {
+        display: inline-block;
+        margin-bottom: 18px;
+        width: 100%;
+        text-align: right;
+    }
+    // .wallet__data
+    &__data {
+    }
+    // .wallet__wen
+    &__wen {
+        margin-right: 15px;
+    }
+    // .wallet__eth
+    &__eth {
+    }
+}

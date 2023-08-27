@@ -1,0 +1,21 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 75%;
+    // .nav__item
+    &__item {
+        padding: 22px 0;
+    }
+    // .nav__link
+    &__link {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    &__link--active {
+        font-size: 20px;
+        font-weight: 700;
+        color: red;
+    }
+}

@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=B612+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+html,
+body {
+    font-family: "B612 Mono", monospace;
+    position: relative;
+    background-color: #fff;
+}
+
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: conic-gradient(
+        from 270deg at 78.61% 50%,
+        rgba(217, 217, 217, 0) 0deg,
+        #14100c 208.125deg,
+        #00050b 360deg
+    );
+    position: relative;
+}
+
+.container {
+    max-width: 1147px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.text {
+    color: #fff;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.active-btn {
+    background: #ff8a8a;
+    color: #2a2a2a;
+    border: 7px solid rgba(146, 91, 91, 0.63);
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 94px;
+    padding: 9px 46px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    width: 200px;
+}
+
+.first {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.second {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.map {
+    // .map__inner
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        overflow: auto;
+    }
+    // .map__item
+    &__item {
+        min-width: 247px;
+        width: 247px;
+        height: 250px;
+        position: relative;
+    }
+    // .map__top
+    &__top {
+        width: 100%;
+        border: 7px solid rgba(146, 91, 91, 0.63);
+        box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.5);
+        height: 209px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        border-radius: 94px;
+    }
+    // .map__text
+    &__text {
+        font-size: 27px;
+        font-weight: 700;
+        z-index: 1;
+    }
+    // .map__bottom
+    &__bottom {
+        width: 100%;
+        height: 63px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #e1e0e0;
+        border: 7px solid rgba(146, 91, 91, 0.63);
+        cursor: pointer;
+        border-radius: 94px;
+        margin-top: -30px;
+        font-size: 30px;
+        font-weight: 700;
+        position: absolute;
+    }
+    // .map__bottom--active
+    &__bottom--active {
+        background: #ff8a8a;
+    }
+    // .map__img
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 6px;
+    }
+}

@@ -1,0 +1,16 @@
+.hero {
+    // .hero__inner
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: self-end;
+    }
+    // .hero__title
+    &__title {
+        font-size: 55px;
+        font-weight: 700;
+    }
+    // .hero__img
+    &__img {
+    }
+}
