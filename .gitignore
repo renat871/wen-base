@@ -14,3 +14,4 @@ yarn-error.log*
 /.changelog
 .npm/
 node_modules
+package-lock.json
