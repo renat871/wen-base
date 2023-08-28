@@ -65,7 +65,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 50%;
+    min-height: 44%;
 }
 
 .map {
@@ -130,7 +130,7 @@ body {
     }
 }
 
-@media screen and (max-height: 855px) {
+@media screen and (max-height: 895px) {
     .App {
         height: auto;
     }
@@ -139,16 +139,16 @@ body {
         max-height: 510px;
     }
     .second {
-        min-height: 510px;
-        max-height: 510px;
+        min-height: 590px;
+        max-height: 590px;
     }
 }
 
 @media screen and (max-width: 350px) {
-    .wallet__address{
+    .wallet__address {
         display: none;
     }
-    .wallet__balance span{
+    .wallet__balance span {
         line-height: 41px;
     }
 }
@@ -188,7 +188,7 @@ body {
         height: 70vh;
     }
     .second {
-        height: 70vh;
+        height: 90vh;
     }
     .text {
         font-size: 16px;
