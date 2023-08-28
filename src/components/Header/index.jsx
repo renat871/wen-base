@@ -60,11 +60,11 @@ const Header = () => {
                             </a>
                         ) : (
                             <>
-                                <p className="wallet__text">Wallet connected</p>
                                 <div className="wallet__data">
                                     <span className="wallet__wen">
                                         {wenBalance} $WEN
                                     </span>
+                                    <br />
                                     <span className="wallet__eth">
                                         {ethBalance} $ETH
                                     </span>

@@ -3,7 +3,7 @@
     &__inner {
         display: flex;
         justify-content: space-between;
-        align-items: self-start;
+        align-items: center;
 
         padding: 37px 0;
     }
@@ -28,16 +28,15 @@
     // .wallet__text
     &__text {
         display: inline-block;
-        margin-bottom: 18px;
         width: 100%;
         text-align: right;
     }
     // .wallet__data
     &__data {
+        text-align: right;
     }
     // .wallet__wen
     &__wen {
-        margin-right: 15px;
     }
     // .wallet__eth
     &__eth {

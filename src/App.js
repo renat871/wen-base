@@ -16,19 +16,24 @@ const App = () => {
     return (
         <div className="App">
             <Router>
-                <div className="first">
-                    <Header />
-                    <Hero />
-                    <Navigaton />
-                </div>
-                <div className="second">
-                    <Routes>
-                        <Route path="/" element={<About />} />
-                        <Route path="/trade" element={<Trade />} />
-                        <Route path="/tokenomics" element={<Tokenomics />} />
-                        <Route path="/map" element={<Map />} />
-                    </Routes>
-                    <Footer />
+                <div className="wrapper">
+                    <div className="first">
+                        <Header />
+                        <Hero />
+                        <Navigaton />
+                    </div>
+                    <div className="second">
+                        <Routes>
+                            <Route path="/" element={<About />} />
+                            <Route path="/trade" element={<Trade />} />
+                            <Route
+                                path="/tokenomics"
+                                element={<Tokenomics />}
+                            />
+                            <Route path="/map" element={<Map />} />
+                        </Routes>
+                        <Footer />
+                    </div>
                 </div>
             </Router>
         </div>
