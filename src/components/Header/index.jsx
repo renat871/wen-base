@@ -8,7 +8,6 @@ import logo from "../../img/logo.png";
 const Header = () => {
     const { open } = useWeb3Modal();
     const { address, isConnected } = useAccount();
-    console.log(address);
     const { data: wen } = useBalance({
         address: address,
         chainId: 8453,
