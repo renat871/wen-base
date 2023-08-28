@@ -20,7 +20,6 @@ import Map from "./pages/map";
 import "./styles/reset.scss";
 import "./styles/style.scss";
 
-
 const chains = [base];
 const projectId = "136551f6feb9cac3ff2cde8e4ba82670";
 
@@ -36,30 +35,25 @@ const App = () => {
     return (
         <div className="App">
             <Router>
-                <div className="wrapper">
-                    <div className="first">
-                        <WagmiConfig config={wagmiConfig}>
-                            <Header />
-                        </WagmiConfig>
-                        <Web3Modal
-                            projectId={projectId}
-                            ethereumClient={ethereumClient}
-                        />
-                        <Hero />
-                        <Navigaton />
-                    </div>
-                    <div className="second">
-                        <Routes>
-                            <Route path="/" element={<About />} />
-                            <Route path="/trade" element={<Trade />} />
-                            <Route
-                                path="/tokenomics"
-                                element={<Tokenomics />}
-                            />
-                            <Route path="/map" element={<Map />} />
-                        </Routes>
-                        <Footer />
-                    </div>
+                <div className="first">
+                    <WagmiConfig config={wagmiConfig}>
+                        <Header />
+                    </WagmiConfig>
+                    <Web3Modal
+                        projectId={projectId}
+                        ethereumClient={ethereumClient}
+                    />
+                    <Hero />
+                    <Navigaton />
+                </div>
+                <div className="second">
+                    <Routes>
+                        <Route path="/" element={<About />} />
+                        <Route path="/trade" element={<Trade />} />
+                        <Route path="/tokenomics" element={<Tokenomics />} />
+                        <Route path="/map" element={<Map />} />
+                    </Routes>
+                    <Footer />
                 </div>
             </Router>
         </div>

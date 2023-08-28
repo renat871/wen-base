@@ -9,9 +9,16 @@ body {
 
 .App {
     min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     position: relative;
+    background: conic-gradient(
+        from 270deg at 78.61% 50%,
+        rgba(217, 217, 217, 0) 0deg,
+        #14100c 208.125deg,
+        #00050b 360deg
+    );
 }
 
 .container {
@@ -45,16 +52,6 @@ body {
     text-align: center;
     display: block;
     width: 200px;
-}
-
-.wrapper {
-    height: 100vh;
-    background: conic-gradient(
-        from 270deg at 78.61% 50%,
-        rgba(217, 217, 217, 0) 0deg,
-        #14100c 208.125deg,
-        #00050b 360deg
-    );
 }
 
 .first {
@@ -133,6 +130,28 @@ body {
     }
 }
 
+@media screen and (max-height: 855px) {
+    .App {
+        height: auto;
+    }
+    .first {
+        min-height: 510px;
+        max-height: 510px;
+    }
+    .second {
+        min-height: 510px;
+        max-height: 510px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .wallet__address{
+        display: none;
+    }
+    .wallet__balance span{
+        line-height: 41px;
+    }
+}
 @media screen and (max-width: 600px) {
     .container {
         padding: 0 8px;
@@ -147,7 +166,8 @@ body {
         font-size: 44px;
     }
     .nav {
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: left;
         width: 100%;
         gap: 15px;
         &__item {
@@ -166,13 +186,11 @@ body {
 
     .first {
         height: 70vh;
-        padding-bottom: 25px;
     }
-
     .second {
         height: 70vh;
     }
-    .text{
+    .text {
         font-size: 16px;
     }
 }

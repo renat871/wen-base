@@ -36,7 +36,6 @@ const Header = () => {
                                 >
                                     {address}
                                 </p>
-                                <br />
                                 <div className="wallet__balance">
                                     <span className="wallet__wen">
                                         {wen.formatted} $WEN
