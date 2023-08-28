@@ -3,7 +3,7 @@
     &__inner {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: self-start;
 
         padding: 37px 0;
     }
@@ -30,9 +30,26 @@
         display: inline-block;
         width: 100%;
         text-align: right;
+        line-height: 41px;
     }
     // .wallet__data
     &__data {
+        text-align: right;
+    }
+    // .wallet__balance
+    &__balance {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: right;
+    }
+    // .wallet__address
+    &__address {
+        max-width: 260px;
+        line-height: 41px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         text-align: right;
     }
     // .wallet__wen
